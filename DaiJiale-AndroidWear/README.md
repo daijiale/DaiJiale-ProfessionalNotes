@@ -67,15 +67,14 @@
 
 2、你可以通过滑动卡片，进一步了解更多信息，而且伴随有 **“语音快速回复” “归档” “在手机端打开回复”**三种操作，这里我们重点谈一下**语音快速回复**这个**具有wear特性**的操作流程：
 
-
+ 
 `Android Notification API` 会让你通过远程输入给reply行为做一个注释,而远程输入则会告诉AndroidWear，在执行这个行为之前，你要把文本输入的方式改为语音，因此当Gmail建立一个notification连接时，wear端会给reply行为附加一个远程输入，AndroidWear会看到这条远程输入，然后不会立即发送一个行为，会首先启动一个wear UI界面来收集语音回复信息，然后把转换好的文本变成意图，再发送意图到你的手机上，手机得到意图后，就可以在不触动手机UI的情况下发送/回复邮件了。
 
 下面是关键代码实现过程：
 
 **Add RemoteInput to Reply Action**
 
-<code>
-
+```
 Action replyAction = new NotificationCompat.Action.Builder(
 	R.drawble.ic_reply,getString(R.string.reply), 
 	replyPendingIntent)
@@ -83,7 +82,7 @@ Action replyAction = new NotificationCompat.Action.Builder(
 	  new RemoteInput.Builder(EXTRA_REPLY_TEXT)
 		.setLabel(getString(R.string.replyLabel))
 		.build()).build();
-</code>
+```
 
 **Modify Activity to Use Reply Text**
 
