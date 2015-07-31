@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<node label = "Working with Arrays" dir="" parent="true">
+    <node label = "what is an array" page = "whatisanarray.php"></node>
+	<node label = "creating arrays" page = "creating_arrays.php"></node>
+    <node label = "multidimensional Array" page = "multidimensional_array.php"></node>
+	<node label = "foreachloops" page = "foreachloops.php"></node>
+    <node label = "Array functions" page = "array_functions.php"></node>
+    <node label = "Built-in PHP Arrays" page = "built-in_arrays.php"></node>
+</node>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<node label = "Working with Strings" dir="" parent="true">
+    <node label = "Strings and strlen" page = "working_with_strings.php"></node>
+   	<node label = "Concatenate" page = "concatenate.php"></node>
+    <node label = "Substrings" page = "substrings.php"></node>
+    <node label = "String Case Functions" page = "string_case_functions.php"></node>
+    <node label = "Find and Replace" page = "find_and_replace.php"></node>
+    <node label = "Cleaning Up Strings" page = "cleaning_up_strings.php"></node>
+</node>

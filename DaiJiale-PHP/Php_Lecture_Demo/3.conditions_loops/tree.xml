@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<node label = "Conditions loops" dir="" parent="true">
+    <node label = "If Statements" page = "ifstatements.php"></node>
+	<node label = "Else and Elseif" page = "elseandelseif.php"></node>
+    <node label = "logicops" page = "logicops.php"></node>
+	<node label = "Switch" page = "switch.php"></node>
+    <node label = "Whileloops" page = "whileloops.php"></node>
+    <node label = "Forloops" page = "forloops.php"></node>
+	<node label = "Continue" page = "continue.php"></node>
+	<node label = "Break" page = "break.php"></node>
+</node>

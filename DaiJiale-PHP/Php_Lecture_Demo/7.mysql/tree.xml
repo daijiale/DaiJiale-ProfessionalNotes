@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<node label = "MYSQL" dir="" parent="true">
+    <node label = "Connecting to Data" page="connecting_to_data.php"></node>
+    <node label = "Retrieving Data" page="retrieving_data.php"></node>
+    <node label = "Manipulating Data" page="manipulating_data.php"></node>
+</node>

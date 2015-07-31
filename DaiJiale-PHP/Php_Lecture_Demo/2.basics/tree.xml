@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<node label = "basics" dir="" parent="true">
+	<node label = "Numbers" page = "numbers.php"></node>
+    <node label = "Floats" page = "floats.php"></node>
+	<node label = "Booleans" page = "booleans.php"></node>
+    <node label = "Typecasting" page = "typecasting.php"></node>
+    <node label = "Constants" page = "constants.php"></node>
+</node>

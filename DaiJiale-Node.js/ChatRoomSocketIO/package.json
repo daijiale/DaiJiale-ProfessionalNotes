@@ -1,0 +1,14 @@
+{
+  "name": "ChatRoom",
+  "version": "0.0.1",
+  "description": "a socketIO demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "daijiale"
+  },
+  "keywords": [
+    "daijiale"
+  ],
+  "author": "daijiale",
+  "license": "ISC"
+}

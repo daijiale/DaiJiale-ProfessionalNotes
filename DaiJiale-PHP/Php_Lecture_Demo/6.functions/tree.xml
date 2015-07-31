@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<node label = "Functions" dir="" parent="true">
+    <node label = "Functions" page = "functions.php"></node>
+	<node label = "Using Functions" page = "usingfunctions.php"></node>
+    <node label = "Return values" page = "returnvalues.php"></node>
+    <node label = "Globals" page = "globals.php"></node>
+    <node label = "Defaultvalues" page = "Defaultvalue.php"></node>
+</node>
