@@ -1,0 +1,1 @@
+<img class="capture-image" src="image.php">
