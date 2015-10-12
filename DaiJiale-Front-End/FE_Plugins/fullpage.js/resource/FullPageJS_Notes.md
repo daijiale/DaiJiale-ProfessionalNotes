@@ -2,9 +2,11 @@
 
 ## 插件引入
 
+[原作者Github下载地址](https://github.com/alvarotrigo/fullPage.js)
+
 主体插件资源包为：
 
-```
+```html
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.7/jquery.fullPage.css"/>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.js"></script>
@@ -22,7 +24,7 @@ PS:
 
 纵向滚动：
 
-```
+```html
 <div id="fullpage">
 	<div class="section">一些内容</div>
 	<div class="section">一些内容</div>
@@ -33,7 +35,7 @@ PS:
 
 横向滚动：
 
-```
+```html
 <div class="section">
 	<div class="slide">Slide 1</div>
 	<div class="slide">Slide 2</div>
@@ -44,7 +46,7 @@ PS:
 
 激活fullpage效果
 
-```
+```javascript
 $(document).ready(function(){
    	$('#fullpage').fullpage();
    	});	
@@ -104,7 +106,7 @@ $(document).ready(function(){
 
 
 
-   ```
+   ```javascript
    <script>
    $(document).ready(function(){
    	$('#fullpage').fullpage({
