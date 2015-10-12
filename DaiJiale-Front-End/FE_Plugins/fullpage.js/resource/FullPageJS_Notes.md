@@ -104,8 +104,91 @@ $(document).ready(function(){
 
 - menu:绑定菜单，设定的相关属性与anchors的值对应后，菜单可以控制滚动，默认为false。可以设置为菜单的jQuery选择器。 
 
+- navigation:是否显示导航，默认为false。如果设置为true，会显示小圆点，作为导航。
 
+- navigationPosition：导航小圆点的位置，可以设置为left或者right。
 
+- navigationTooltips：导航小圆点的tooltips设置，默认为[]，注意按照顺序设置。
+
+- showActiveTooltip:  是否显示当前页面的导航的tooltip信息，默认为false
+
+- slidesNavigation：是否显示横向幻灯片的导航，默认为false。
+
+- slidesNavPosition： 横向幻灯片导航的位置，默认为bottom，可以设置为top或者bottom。
+
+- scrollOverflow:内容超过满屏后是否显示滚动条，默认为false。如果设置为true，则会显示滚动条，如果要滚动查看内容，还需要jQuery.slimscroll插件的配合。slim scroll插件主要用于模拟传统的浏览器滚动条。
+
+- sectionSelector：section的选择器，默认为.section。
+
+- slideSelector：slide的选择器，默认为.slide 。       
+
+## 函数方法
+
+- moveSectionUp( ) : 向上滚动一页。
+
+- moveSectionDown( ) : 向下滚动一页。
+
+- moveTo(section,slide) : 滚动到第几页，第几个幻灯片，注意，页面是从1开始，而幻灯片，是从0开始。
+
+- silentMoveTo(section,slide):滚动到第几页，和moveTo一样，但是没有动画效果。
+
+- moveSlideRight( )：幻灯片向右滚动。
+
+- moveSlideLeft( ) : 幻灯片向左滚动。 
+
+- setAutoScrolling(boolean) : 动态设置autoScrolling
+
+- setLockAnchors(boolean) : 动态设置lockAnchors
+
+- setRecordHistory(boolean) : 动态设置recordHistory
+
+- setScrollingSpeed(milliseconds) : 动态设置scrollingSpeed   
+
+- setAllowScrolling(boolean,[directions]) : 添加或删除鼠标滚轮/滑动控制，第一个参数true为启用，false为禁用，后面的参数为方向，取值包含all，up，down，left，right，可以使用多个逗号分隔。
+
+- destroy(type): 销毁fullpage特效，type可以不写，  或者使用all,不写type，fullpage给页面增加的样式和html元素还在，如果使用all，则样式，html等全部销毁，页面恢复和不使用fullpage相同的效果。
+
+- reBuild（）：重新更新页面和尺寸，用于通过ajax请求后改变了页面结构之后，重建效果。 
+
+## 懒加载
+
+图片：
+
+```html
+<img data-src="image.png">
+```
+视频：
+
+```html
+<video>
+		<source data-src="video.webm" type="video/webm" />
+		<source data-src="video.mp4" type="video/mp4"/>
+</vide>
+```
+
+## 回调
+
+- afterLoad(anchorLink,index)：
+滚动到某一section，且滚动结束后，会触发一次此回调函数，函数接收anchorLink和index两个参数，anchorLink是锚链接的名称，index是序号，从1开始计算。
+我们可以根据anchorLink和index参数值的判断，触发相应的事件。
+
+- onLeave(index,nextIndex,direction): 在我们离开一个section时，会触发一次此回调函数，接收index、nextIndex和direction3个参数：
+    -  index是离开的"页面"的序号，从1开始计算；
+    - nextIndex是滚动到的目标“页面”的序号，从1开始计算；
+    - direction判断往上滚动还是往下滚动，值是up或者down
+    
+ 通过return false，可以取消滚动。
+ 
+ 
+ - afterRender( ) : 页面结构生成后（初始化）的回调函数。
+ 
+ - afterResize( ) : 浏览器窗口尺寸改变后的回调函数。
+ 
+ - afterSlideLoad(anchorLink,index,slideAnchor,slideIndex): 滚动到某一幻灯片后的回调函数，与afterLoad类似，接收anchorLink、index、slideIndex、direction4个参数。
+ 
+ - onSlideLeave（anchorLink，index。slideIndex，direction，nextSlideIndex）：在我们离开一个slide时，会触发一次此回调函数，与onLeave类似，接收anchorLink、index、slideIndex、direction4个参数。
+  
+## Example
    ```javascript
    <script>
    $(document).ready(function(){
@@ -116,9 +199,29 @@ $(document).ready(function(){
    		//resize:true，
    		//scrollingSpeed:2000,
    		anchors:['page1','page2','page3','page4'],
+   		//...
+   		
+   		//以下为回调
+   		afterLoad:function(anchorLink,index){
+   			console.log("afterLoad:anchorLink="+anchorLink+";index="+index);
+   		},
+   		onLeave:function(index,nextIndex,direction){
+   			console.log("onLeave:index="+index+";nextIndex="+nextIndex+";direction="+direction);
+   		},
    	});
    } );
    
    </script>
    
    ```
+   
+   
+##    我基于fullpage.js的项目
+
+- [真喜聚官网首页](http://daijialewebdesign.sinaapp.com/ZhenXiJu/index.php);
+- [小枫主页]();
+- [小枫特卖]();
+
+   
+   
+**   更多API和方法请参考：[官网文档](https://github.com/alvarotrigo/fullPage.js)，以此为准。**
