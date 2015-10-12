@@ -1,0 +1,13 @@
+/*Prevent fixed top heading*/
+.fixed-top{
+	position: static;
+}
+
+.header-line{
+		margin-bottom: 0;
+}
+
+/*Make mobile menu visible*/
+.z-nav__list.open-nav{
+	opacity: 1;
+}
