@@ -22,7 +22,8 @@ PS:
 
 纵向滚动：
 
-```<div id="fullpage">
+```
+<div id="fullpage">
 	<div class="section">一些内容</div>
 	<div class="section">一些内容</div>
 	<div class="section">一些内容</div>
@@ -32,7 +33,8 @@ PS:
 
 横向滚动：
 
-```<div class="section">
+```
+<div class="section">
 	<div class="slide">Slide 1</div>
 	<div class="slide">Slide 2</div>
 	<div class="slide">Slide 3</div>
@@ -42,9 +44,11 @@ PS:
 
 激活fullpage效果
 
-```$(document).ready(function(){
+```
+$(document).ready(function(){
    	$('#fullpage').fullpage();
    	});	
+   	
 ```
 
 ## 配置项目
@@ -93,6 +97,11 @@ PS:
 - continuousVertical ：是否循环滚动，默认为false。如果设置为true，则页面会循环滚动，而不像loopTop或者loopBottom那样出现跳动，注意这个属性和loopTop、loopBottom不兼容，不要同时设置。
 
 - animateAnchor：锚链接是否可以控制滚动动画，默认为true。如果设置为false，则通过锚链接定位到某个页面显示不再有动画效果。
+
+- recordHistory:是否记录历史，默认为true，可以记录页面滚动的历史，通过浏览器的前进后退来导航。注意如果设置了autoScrolling:false，那么这个配置也将被关闭，即设置为false。
+
+- menu:绑定菜单，设定的相关属性与anchors的值对应后，菜单可以控制滚动，默认为false。可以设置为菜单的jQuery选择器。 
+
 
 
    ```
