@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Relient - Responsive Multiperpose Theme</title>
+		
+		<!-- Preloader CSS -->
+		<script src="js/pace.min.js"></script>
+		
+		<!-- Meta Viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		
+		<!-- Meta description and keywords -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		
+		<!-- Shortcut icons And Apple touch icon -->
+		<link rel="shortcut icon" href="img/favicon.png" >
+		<link rel="apple-touch-icon" href="img/favicon.png" >
+		
+		<!-- Preloader CSS -->
+		<link rel="stylesheet" href="css/pace.css" >
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		
+		<!-- Universal stylesheet (Shouldbe used with all multiperpose pages) -->
+		<link rel="stylesheet" href="css/multiperpose.css">
+		<link rel="stylesheet" href="css/main.css">
+		
+		<!-- Custom CSS (Page Specific) < Editable > -->
+		<link rel="stylesheet" href="css/pages/page-multi-perpose.css">
+		
+		<!-- Custom CSS (color theme) < Editable > -->
+		<link rel="stylesheet" href="css/color-theme/business/blue.css">
+		
+		<!-- CSS Only for demo delete in original vrsion -->
+		<link rel="stylesheet" href="css/demo.css">
+	</head>
+	<!-- Body Starts Here -->
+	<!-- Add class bg-1 to bg-18 for different background patterns -->
+	<body class="bg-17">
+		<!-- Overlay visible only while loading page -->
+		<div class="overlay"></div>
+		<!-- Div set layout of page for full-width layout add class full-width else for boxed layout add class boxed -->
+		<div class="layout full-width">
+			<!-- Section only for demo perpose should not include in original version -->
+			<section id="demo" class="demo hidden-xs">
+				<div class="container affix">
+					<div class="row">
+						<div class="handle">
+							<button type="button" class="btn btn-danger" data-toggle="style-switcher"><span class="fa fa-cog fa-spin"></span></button>
+						</div>
+						<div class="styler well custom">
+							<span class="close fa fa-times"></span>
+							<h3 class="heading txt-xs">Layout</h3>
+							<div class="ul ul-xs"><span></span></div>
+							<div class="btn-group" data-toggle="buttons">
+							  <label class="btn btn-success active">
+								<input type="radio" checked name="layout" value="full" id="layout1"> Full
+							  </label>
+							  <label class="btn btn-warning">
+								<input type="radio" name="layout" value="boxed" id="layout2"> Boxed
+							  </label>
+							</div>
+							<h3 class="heading txt-xs">Side Nav Style</h3>
+							<div class="ul ul-xs"><span></span></div>
+							<div class="btn-group" data-toggle="buttons">
+							  <label class="btn btn-success active">
+								<input type="radio" checked name="layout" value="reveal" id="side-menu-style1"> Push
+							  </label>
+							  <label class="btn btn-warning">
+								<input type="radio" name="layout" value="overlay" id="side-menu-style2"> Overlay
+							  </label>
+							</div>
+							<h3 class="heading txt-xs">Color Themes</h3>
+							<div class="ul ul-xs"><span></span></div>
+							<div class="color-themes"></div>
+							<h3 class="heading txt-xs">Background Patterns</h3>
+							<div class="ul ul-xs"><span></span></div>
+							<div class="bg-patterns"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="home-head">
+				<div class="container">
+				<!-- TopThin Bar Containing Contact Info and Email And Social Button etc... (Visible only only on big screens) -->
+				<div class="row top-bar-contact hidden-xs">
+					<!-- Email/Phone -->
+					<div class="col-sm-6 col-md-5 col-lg-4 contact">
+						<!-- Contact Phone -->
+						<span class="phone"><span class="fa fa-phone"></span>&nbsp;+91-1234567890</span>
+						<!-- Contact Email -->
+						<span class="email"><span class="fa fa-envelope-o"></span>&nbsp;info@example.com</span>
+					</div>
+					<!-- Social and login/signup Buttons visible only on big screens (PC, Laptop) -->
+					<div class="col-sm-6 col-md-7 col-lg-8 social">
+						<div class="btn-group">
+							<!-- Facebook -->
+							<a class="btn btn-primary btn-xs" href="#" title="Facebook"><span class="fa fa-facebook"></span></a>
+							<!-- Twitter -->
+							<a class="btn btn-info btn-xs" href="#" title="Twitter"><span class="fa fa-twitter"></span></a>
+							<!-- Google Plus -->
+							<a class="btn btn-danger btn-xs" href="#" title="Google+"><span class="fa fa-google-plus"></span></a>
+						</div>
+						<div class="btn-group">
+							<!-- Login Modal Button -->
+							<button data-toggle="modal" data-target="#login-modal" class="btn btn-success btn-xs">Login</button>
+							<!-- Signup Modal Button -->
+							<button data-toggle="modal" data-target="#signup-modal" class="btn btn-info btn-xs">Signup</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav class="navbar navbar-default">
+				<div class="container">
+					<div class="navbar-header">
+						<!-- Toggle Button for main navbar (Horizontal Nav) (This button visible only on mobile) -->
+						<button type="button" class="navbar-toggle collapsed left" data-toggle="collapse" data-target="#main-navbar">
+							<span class="sr-only">Toggle navigation</span> 
+							<span class="icon-bar"></span> 
+							<span class="icon-bar"></span> 
+							<span class="icon-bar"></span>
+						</button>
+						<!-- Toggle Button for main navbar (Verticle Side Nav) (This button visible only on mobile) -->
+						<button type="button" class="navbar-toggle collapsed right" data-toggle="side-nav" data-style="reveal" data-target=".side-nav">
+							<span class="sr-only">Toggle navigation</span> 
+							<span class="icon-bar"></span> 
+							<span class="icon-bar"></span> 
+							<span class="icon-bar"></span>
+						</button>
+						<!-- Site Name -->
+						<a class="navbar-brand" href="#">RELIENT</a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="main-navbar">
+						<!-- Text which toggle Verticle Side nav on click (Visible Only OnBig Screens) -->
+						<p class="navbar-text navbar-right hidden-xs" data-toggle="side-nav" data-style="reveal" data-target=".side-nav">
+							<span class="fa fa-bars"></span>
+						</p>
+						<!-- Main Nav Pills -->
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<!-- Main Nav Pill Link -->
+								<a href="#">
+									<!-- Main Nav Pill Icon -->
+									<span class="fa fa-home"></span>
+									<!-- Main Nav Pill Text -->
+									Home
+								</a>
+							</li>
+							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-gift"></span>Extra Pages <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="multiperpose-about-us.html">About Us <span class="label label-primary txt-n">New</span></a></li>
+									<li class="divider"></li>
+						            <li><a href="multiperpose-contact-1.html">Contact Style 1</a></li>
+						            <li><a href="multiperpose-contact-2.html">Contact Style 2</a></li>
+						            <li class="divider"></li>
+						            <li><a href="login.html">Login</a></li>
+						            <li><a href="signup.html">Signup</a></li>
+						            <li><a href="login-option.html">Login Option</a></li>
+						            <li><a href="signup-option.html">Signup Option</a></li>
+						            <li><a href="login-signup.html">Login / Signup</a></li>
+						            
+						        </ul>
+							</li>
+							<li><a href="#" data-toggle="side-nav" data-style="reveal" data-target=".side-nav"><span class="fa fa-flash"></span>Components</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div class="container side-nav affix">
+				<div class="row">
+					
+					<!-- Social Icons and login/signup Buttons for only mobile devices -->
+					<!-- Social Buttons -->
+					<div class="nav-social text-center visible-xs">
+						<div class="btn-group">
+							<!-- Facebook Button -->
+							<a class="btn btn-primary btn-xs" href="#"><span class="fa fa-facebook"></span></a>
+							<!-- Twitter Button -->
+							<a class="btn btn-info btn-xs" href="#"><span class="fa fa-twitter"></span></a>
+							<!-- Google Plus Button -->
+							<a class="btn btn-danger btn-xs" href="#"><span class="fa fa-google-plus"></span></a>
+						</div>
+						<div class="btn-group">
+							<!-- Login Button -->
+							<button data-toggle="modal" data-target="#login-modal" class="btn btn-success btn-xs">Login</button>
+							<!-- Signup Button -->
+							<button data-toggle="modal" data-target="#signup-modal" class="btn btn-info btn-xs">Signup</button>
+						</div>
+					</div>
+					<!-- Navigation Bar Heading -->
+					<h3 class="heading">
+						Navigation
+						<!-- Close Button -->
+						<span class="fa fa-close right" data-toggle="side-nav" data-style="reveal" data-target=".side-nav"></span>
+					</h3>
+					<!-- Divider -->
+					<div class="ul"><span></span></div>
+					<nav class="sidebar-nav">
+						
+							<ul id="side-nav">
+								<li>
+									<a href="com-header.html"> 
+										<span class="sidebar-nav-item-icon fa fa-compass fa-lg"></span> 
+										<span class="sidebar-nav-item">Header Options <span class="label label-primary txt-n">New</span></span>
+									</a>
+								</li>
+								<!-- Nav Pills -->
+								<li class="active">
+									<!-- Nav Pill Link -->
+									<a href="#"> 
+										<!-- Nav Pill Icon -->
+										<span class="sidebar-nav-item-icon fa fa-suitcase fa-lg"></span> 
+										<!-- Nav Pill Text -->
+										<span class="sidebar-nav-item">Shortcodes</span>
+										<!-- Nav Pill Arrow Icon Fo Child -->
+										<span class="fa arrow"></span>
+									</a>
+									<!-- Nav Pill Childs -->
+									<ul>
+										<li>
+										<!-- Nav Pill Childs Link -->
+											<a href="com-shortcode.html">
+												<!-- Nav Pill Childs icon -->
+												<span class="sidebar-nav-item-icon fa fa-briefcase"></span>
+												<!-- Nav Pill Childs Text -->
+												Typography
+											</a>
+										</li>
+										<li>
+											<a href="com-headings.html">
+												<span class="sidebar-nav-item-icon fa fa-briefcase"></span>Headings
+											</a>
+										</li>
+										<li>
+											<a href="com-label.html">
+												<span class="sidebar-nav-item-icon fa fa-briefcase"></span>Labels <span class="label label-success">Updated</span>
+											</a>
+										</li>
+										<li>
+											<a href="com-accor.html">
+												<span class="sidebar-nav-item-icon fa fa-columns"></span>Panels <span class="label label-success">Updated</span>
+											</a>
+										</li>
+										<li>
+											<a href="com-buttons.html">
+												<span class="sidebar-nav-item-icon fa fa-toggle-on"></span>Buttons <span class="label label-success">Updated</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#"> 
+										<span class="sidebar-nav-item-icon fa fa-newspaper-o fa-lg"></span> 
+										<span class="sidebar-nav-item">Boxes</span>
+										<span class="fa arrow"></span>
+									</a>
+									<ul>
+										<li>
+											<a href="com-contentbox.html">
+												<span class="sidebar-nav-item-icon fa fa-newspaper-o"></span>Content Boxes
+											</a>
+										</li>
+										<li>
+											<a href="com-funnybox.html">
+												<span class="sidebar-nav-item-icon fa fa-smile-o"></span>Funny Boxes
+											</a>
+										</li>
+										<li>
+											<a href="com-tagline.html">
+												<span class="sidebar-nav-item-icon fa fa-tasks"></span>Tagline Boxes
+											</a>
+										</li>
+										<li>
+											<a href="com-shadowbox.html">
+												<span class="sidebar-nav-item-icon fa fa-briefcase"></span>Shadow Boxes
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="com-portfolio.html"> 
+										<span class="sidebar-nav-item-icon fa fa-user fa-lg"></span> 
+										<span class="sidebar-nav-item">Portfolio <span class="label label-success">Updated</span></span>
+									</a>
+								</li>
+								<li>
+									<a href="com-divider.html"> 
+										<span class="sidebar-nav-item-icon fa fa-ellipsis-h fa-lg"></span> 
+										<span class="sidebar-nav-item">Divider <span class="label label-success">Updated</span></span>
+									</a>
+								</li>
+								<li>
+									<a href="com-counter.html"> 
+										<span class="sidebar-nav-item-icon fa fa-clock-o fa-lg"></span> 
+										<span class="sidebar-nav-item">Counters</span>
+									</a>
+								</li>
+								<li>
+									<a href="com-circles.html"> 
+										<span class="sidebar-nav-item-icon fa fa-circle-o fa-lg"></span> 
+										<span class="sidebar-nav-item">Circles</span>
+									</a>
+								</li>
+							</ul>
+					</nav>
+				</div>
+			</div>
+			</section> 
+			<section id="home-slider">
+				<div class="slider-wrapper">
+					<div class="container">
+					<div class="row">
+						<div class="carousel slider" id="main-slider" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#main-slider" data-slide-to="0" class="active"></li>
+								<li data-target="#main-slider" data-slide-to="1"></li>
+							</ol>
+		
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="container">
+										<div class="row">
+											<div class="col-xs-12">
+												<div class="carousel-caption">
+													<h3 class="slider-heading animated fadeInDownBig a-d-3 text-center">Touch enabled carousals and side nav</h3>
+													<h4 class="slider-subheading animated fadeInDown a-d-7 color-inverse text-center">To test touch try to drag anything to right or left.</h4>
+													<div class="col-lg-4 col-md-6 col-sm-12 text-left">
+														<ul class="list-unstyled slider-content">
+															<li class="animated fadeInUp a-d-9"><span class="fa fa-check-square-o"></span> 10 Color schemes</li>
+															<li class="animated fadeInUp a-d-13"><span class="fa fa-check-square-o"></span> 150 Design elements </li>
+															<li class="animated fadeInUp a-d-16"><span class="fa fa-check-square-o"></span> Clean and cmmented code</li>
+														</ul>
+														<p class="slider-footer animated bounceInUp a-d-18">
+															Lorem ipsum dolor sit amet consectetur adipisicing elit. In rerum maxime quis tenetur dolor recusandae a <span class="color-inverse">nulla qui</span> enim dolorem.
+														</p>
+													</div>
+													<div class="col-lg-4 col-md-6 hidden-xs hidden-sm text-center">
+														<span class="fa fa-hand-o-up animated zoomInDown a-d-7 slider-icon"></span>
+													</div>
+													<div class="col-lg-4 hidden-xs hidden-sm hidden-md text-right">
+														<ul class="list-unstyled slider-content">
+															<li class="animated fadeInDown a-d-9"><span class="fa fa-check-square-o"></span> 4 Home pages </li>
+															<li class="animated fadeInDown a-d-13"><span class="fa fa-check-square-o"></span> Touch sensitive theme </li>
+															<li class="animated fadeInDown a-d-16"><span class="fa fa-check-square-o"></span> Boxed and full width layout </li>
+														</ul>
+														<p class="slider-footer animated bounceInUp a-d-18">
+															Lorem ipsum dolor sit amet consectetur adipisicing elit. In rerum maxime quis tenetur dolor recusandae a <span class="color-inverse">nulla qui</span> enim dolorem.
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<div class="container">
+										<div class="row">
+											<div class="col-xs-12">
+												<div class="carousel-caption">
+													<h3 class="slider-heading animated fadeInDownBig a-d-3 text-center">One theme for all</h3>
+													<h4 class="slider-subheading animated fadeInDown a-d-7 color-inverse text-center">Design in your own way.</h4>
+													<div class="col-lg-4 col-md-6 col-sm-12 text-left">
+														<ul class="list-unstyled slider-content">
+															<li class="animated fadeInUp a-d-9"><span class="fa fa-check-square-o"></span> 1 Business Home</li>
+															<li class="animated fadeInUp a-d-13"><span class="fa fa-check-square-o"></span> 3 Portfolio Home </li>
+															<li class="animated fadeInUp a-d-16"><span class="fa fa-check-square-o"></span> 2 Contact Us Options</li>
+														</ul>
+														<p class="slider-footer animated bounceInUp a-d-18">
+															Lorem ipsum dolor sit amet consectetur adipisicing elit. In rerum maxime quis tenetur dolor recusandae a <span class="color-inverse">nulla qui</span> enim dolorem.
+														</p>
+													</div>
+													<div class="col-lg-4 col-md-6 hidden-xs hidden-sm text-center">
+														<span class="fa fa-desktop animated zoomInDown a-d-7 slider-icon"></span>
+													</div>
+													<div class="col-lg-4 hidden-xs hidden-sm hidden-md text-right">
+														<ul class="list-unstyled slider-content">
+															<li class="animated fadeInDown a-d-9"><span class="fa fa-check-square-o"></span> 5 Login / Signup Options </li>
+															<li class="animated fadeInDown a-d-13"><span class="fa fa-check-square-o"></span> 1 General Content Option </li>
+															<li class="animated fadeInDown a-d-16"><span class="fa fa-check-square-o"></span> Lot's of design components </li>
+														</ul>
+														<p class="slider-footer animated bounceInUp a-d-18">
+															Lorem ipsum dolor sit amet consectetur adipisicing elit. In rerum maxime quis tenetur dolor recusandae a <span class="color-inverse">nulla qui</span> enim dolorem.
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a class="left carousel-control" href="#main-slider" data-slide="prev">
+						      <span class="glyphicon glyphicon-chevron-left"></span>
+						    </a>
+						    <a class="right carousel-control" href="#main-slider" data-slide="next">
+						      <span class="glyphicon glyphicon-chevron-right"></span>
+						    </a>
+						</div>
+					</div>
+				</div>
+				</div>
+			</section>
+			<section id="home-content">
+				<div class="container">
+					<div class="row purchase">
+						<!-- Small Description about you/product -->
+						<div class="col-sm-9">
+							<!-- Heading -->
+							<h3 class="heading color txt-md">Relient is a Bootstrap based Multiperpose theme.</h3>
+							<!-- Description -->
+							<p>Relient is a <span class="color">Bootstrap 3.2</span> based Responsive <span class="color">Multiperpose theme</span> having <span class="color">1 Business Home Page</span> and <span class="color">3 Portfolio Home</span> options, <span class="color">10 Color Schemes</span>, <span class="color">Boxed and Full width layout</span>, and number of UI components making is most useful and flexible theme. </p>
+						</div>
+						<div class="col-sm-3 text-center">
+							<button type="button" class="btn btn-danger btn-lg btn-icon btn-icon-right"> Download Now <span class="fa fa-download"></span></button>
+						</div>
+						<div class="ul ul-sm ul-center ul-line"><span></span></div>
+					</div>
+					<div class="row">
+						<!-- Funny box -->
+						<div class="col-lg-4 col-md-4">
+							<div class="col-xs-12 funny-box-1">
+								<!-- Funny Box Heading -->
+								<h3 class="heading txt-sm">Ultra Flexible</h3>
+								<div class="col-sm-2">
+									<div class="icon">
+										<span class="fa fa-cogs"></span>
+									</div>
+								</div>
+								<!-- Funny box content -->
+								<div class="col-sm-10">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a egestas ex, maximus suscipit arcu.</p>
+								</div>
+							</div>
+						</div>
+						<!-- Funny box -->
+						<div class="col-lg-4 col-md-4">
+							<div class="col-xs-12 funny-box-1">
+								<!-- Funny Box Heading -->
+								<h3 class="heading txt-sm">Ready To Deploy</h3>
+								<div class="col-sm-2">
+									<div class="icon">
+										<span class="fa fa-paper-plane"></span>
+									</div>
+								</div>
+								<!-- Funny box content -->
+								<div class="col-sm-10">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a egestas ex, maximus suscipit arcu.</p>
+								</div>
+							</div>
+						</div>
+						<!-- Funny box -->
+						<div class="col-lg-4 col-md-4">
+							<div class="col-xs-12 funny-box-1">
+								<!-- Funny Box Heading -->
+								<h3 class="heading txt-sm">Clean Design</h3>
+								<div class="col-sm-2">
+									<div class="icon">
+										<span class="fa fa-desktop"></span>
+									</div>
+								</div>
+								<!-- Funny box content -->
+								<div class="col-sm-10">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a egestas ex, maximus suscipit arcu.</p>
+								</div>
+							</div>
+						</div>
+						<!-- Divider -->
+						<div class="ul ul-sm ul-far ul-center ul-line"><span></span></div>
+					</div>
+				</div>
+			</section>
+			<!-- Note to visitor  -->
+			<section id="home-note">
+				<div class="container">
+					<div class="row">
+						<!-- Note -->
+						<h3 class="heading txt-lg text-center">Now you start loving it.</h3>
+						<!-- Divider -->
+						<div class="ul ul-sm ul-center ul-far"><span></span></div>
+					</div>
+				</div>
+			</section>
+			<!-- Client gallry starts here -->
+			<section id="home-clients">
+				<div class="container">
+					<div class="row">
+						<!-- Clients logo slider -->
+						<div class="col-sm-12 client-slider">
+							<!-- Client Logo -->
+							<div class="item">
+								<img src="img/clients/logo3.png" alt="Client 1" title="Client 1" />
+							</div>
+							<!-- Client Logo -->
+							<div class="item">
+								<img src="img/clients/logo2.png" alt="Client 1" title="Client 1" />
+							</div>
+							<!-- Client Logo -->
+							<div class="item">
+								<img src="img/clients/logo3.png" alt="Client 1" title="Client 1" />
+							</div>
+							<!-- Client Logo -->
+							<div class="item">
+								<img src="img/clients/logo2.png" alt="Client 1" title="Client 1" />
+							</div>
+							<!-- Client Logo -->
+							<div class="item">
+								<img src="img/clients/logo3.png" alt="Client 1" title="Client 1" />
+							</div>
+							<!-- Client Logo -->
+							<div class="item">
+								<img src="img/clients/logo2.png" alt="Client 1" title="Client 1" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Footer starts here -->
+			<section id="home-footer">
+			<div class="row">
+				<div class="container">
+					<!-- top footer divider having anchor icon  -->
+					<div data-bgcolor="#8C8C8C" class="ul ul-line ul-center ul-line-sm"><span data-bgcolor="#222" class="fa fa-anchor"></span></div>
+					<!-- First footer content column -->
+					<div class="col-md-4">
+						<div class="col-xs-12">
+							<!-- Column Content heading -->
+							<h3 class="heading txt-sm">Latest News</h3>
+							<!-- Column content -->
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla urna purus dolor sit amet consectetur</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla urna purus dolor sit amet consectetur</p>
+						</div>
+						<div class="col-xs-12">
+							<!-- Column contentheading -->
+							<h3 class="heading txt-sm">Flickr</h3>
+							<!-- column content -->
+							<img src="img/img1.jpg" class="footer-flicker border-img" alt="...">
+							<img src="img/img2.png" class="footer-flicker border-img" alt="...">
+							<img src="img/img3.png" class="footer-flicker border-img" alt="...">
+						</div>
+					</div>
+					<!-- Second footer content column -->
+					<div class="col-md-4">
+						<div class="col-xs-12">
+							<!-- Content heading -->
+							<h3 class="heading txt-sm">Recent Blog</h3>
+							<!-- Column content -->
+							<div class="media">
+							      <a class="pull-left" href="#">
+								    <img class="media-object border-img" src="img/img1.jpg" alt="...">
+								  </a>
+								  <div class="media-body">
+								    <h4 class="media-heading heading color-inverse">Blog heading</h4>
+								    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet consec...<a href="#">More</a></p>
+								  </div>
+								</div>
+							<div class="media">
+								  <a class="pull-left" href="#">
+								    <img class="media-object border-img" src="img/img2.png" alt="...">
+								  </a>
+								  <div class="media-body">
+								    <h4 class="media-heading heading color-inverse">Blog heading</h4>
+								    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet consec...<a href="#">More</a></p>
+								  </div>
+								</div>
+							<div class="media">
+								  <a class="pull-left" href="#">
+								    <img class="media-object border-img" src="img/img3.png" alt="...">
+								  </a>
+								  <div class="media-body">
+								    <h4 class="media-heading heading color-inverse">Blog heading</h4>
+								    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet consec...<a href="#">More</a></p>
+								  </div>
+								</div>
+						</div>
+					</div>
+					<!-- Third footer column -->
+					<div class="col-md-4">
+							<div class="col-xs-12">
+								<!-- Column heading -->
+								<h3 class="heading txt-sm">About Us</h3>
+								<!-- Column content -->
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla urna purus dolor sit amet consectetur</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla urna purus dolor sit amet consectetur</p>
+								<!-- Social icns -->
+								<a href="#"><span class="fa fa-2x fa-facebook float"></span></a>
+								<a href="#"><span class="fa fa-2x fa-twitter float"></span></a>
+								<a href="#"><span class="fa fa-2x fa-google-plus float"></span></a>
+								<a href="#"><span class="fa fa-2x fa-tumblr float"></span></a>
+								<a href="#"><span class="fa fa-2x fa-pinterest float"></span></a>
+							</div>
+							<div class="col-xs-12">
+								<!-- Content heading -->
+								<h3 class="heading txt-sm">News Letter</h3>
+								<!-- Content -->
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Subscribe Us" name="news-letter"><span class="input-group-btn"><button class="btn btn-info"><span class="fa fa-check"></span></button></span>
+								</div>
+							</div>
+						</div>
+					<!-- Last footer divider having link to top -->
+					<div data-bgcolor="#8C8C8C" class="ul ul-line ul-center ul-line-sm"><a href="#home-head" data-scroll-target="#home-head"><span data-bgcolor="#222" class="fa fa-chevron-up"></span></a></div>
+				</div>
+			</div>
+		</section>
+		<!-- Login / Signup Modals -->
+			
+		<!-- Login Modal -->
+			
+		<div class="modal fade" id="login-modal" tabindex="-1">
+			  <div class="modal-dialog modal-sm">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			      	<button type="button" class="close" data-dismiss="modal"><span>&times;</span><span class="sr-only">Close</span></button>
+			        <h4 class="modal-title heading txt-sm text-center">Login Here</h4>
+			      </div>
+			      <div class="modal-body">
+			        <div class="login-form">
+			        	<form action="">
+							<label class="control-label" for="login-user">Username</label>
+							<div class="input-group">
+								<input type="text" id="login-user" class="form-control input-sm" placeholder="Username">
+								<span class="input-group-addon"><span class="fa fa-user"></span></span>
+							</div>
+							<label class="control-label" for="login-pass">Password</label>
+							<div class="input-group">
+								<input type="password" id="login-pass" class="form-control input-sm" placeholder="Password">
+								<span class="input-group-addon"><span class="fa fa-key"></span></span>
+							</div>
+							<a href="#">Forgot password ?</a> <br/>
+							<button class="btn btn-success btn-sm">Login</button>
+							<button class="btn btn-danger btn-sm">Reset</button>
+						</form>
+					</div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			
+		<!-- Signup Modal -->
+			
+		<div class="modal fade" id="signup-modal" tabindex="-1">
+			  <div class="modal-dialog modal-sm">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			      	<button type="button" class="close" data-dismiss="modal"><span>&times;</span><span class="sr-only">Close</span></button>
+			        <h4 class="modal-title heading txt-sm text-center">Signup Here</h4>
+			      </div>
+			      <div class="modal-body">
+			        <div class="login-form">
+			        	<form action="">
+							<label class="control-label" for="signup-user">Username</label>
+							<div class="input-group">
+								<input type="text" id="signup-user" class="form-control input-sm" placeholder="Username">
+								<span class="input-group-addon"><span class="fa fa-user"></span></span>
+							</div>
+							<label class="control-label" for="signup-email">E-Mail</label>
+							<div class="input-group">
+								<input type="text" id="signup-email" class="form-control input-sm" placeholder="E Mail">
+								<span class="input-group-addon"><span class="fa fa-envelope"></span></span>
+							</div>
+							<label class="control-label" for="signup-pass">Password</label>
+							<div class="input-group">
+								<input type="password" id="signup-pass" class="form-control input-sm" placeholder="Password">
+								<span class="input-group-addon"><span class="fa fa-key"></span></span>
+							</div>
+							<button class="btn btn-success btn-sm">Register</button>
+							<button class="btn btn-danger btn-sm">Reset</button>
+						</form>
+					</div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		</div>
+		
+		<!-- jQuery -->
+		<script src="js/jquery-2.1.1.min.js"></script>
+		
+		<!-- Bootstrap -->
+		<script src="js/bootstrap.min.js"></script>
+		
+		<!-- Universal JS for all pages js < Editable > -->
+		<script src="js/multiperpose.js"></script>
+		
+		<!-- JS for specific this page <Editable> -->
+		<script src="js/pages/page-multi-perpose.js"></script>
+		
+		<!-- Style switcher for demo page only -->
+		<script src="js/style-switcher.js"></script>
+	</body>
+</html>
