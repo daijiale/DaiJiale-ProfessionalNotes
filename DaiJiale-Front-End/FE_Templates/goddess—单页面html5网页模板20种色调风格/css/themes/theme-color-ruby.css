@@ -1,0 +1,341 @@
+/* Color Theme - Ruby /Red/
+
+color - #e81259
+
+/* 01 MAIN STYLES
+****************************************************************************************************/
+a {
+  color: #e81259;
+}
+::selection {
+  color: #fff;
+  background: #e81259;
+}
+::-moz-selection {
+  color: #fff;
+  background: #e81259;
+}
+/* Grid */
+.section-description-theme-separator {
+  border-top: 1px solid #e81259;
+}
+/* Typography */
+.text-theme-color {
+  color: #e81259;
+}
+/* logo */
+.logo span {
+  color: #e81259;
+}
+/* 02 NAVIGATION
+****************************************************************************************************/
+.gn-menu-wrapper {
+  border-top: 1px solid #e81259;
+}
+/* nav menu */
+.gn-menu {
+  border-bottom: 5px solid #e81259;
+}
+.gn-selector {
+  background: #e81259;
+}
+.gn-selector:after,
+.gn-selector::after {
+  border-left: 10px solid #e81259;
+}
+input.gn-search {
+  color: #e81259;
+}
+/* icons on navbar */
+.icon-nav:hover {
+  background: #e81259;
+  color: #fff;
+}
+/* placeholder */
+.gn-search::-webkit-input-placeholder {
+  color: #e81259
+}
+.gn-search:-moz-placeholder {
+  color: #e81259
+}
+.gn-search::-moz-placeholder {
+  color: #e81259
+}
+.gn-search:-ms-input-placeholder {
+  color: #e81259
+}
+.no-touch .gn-icon-menu i {
+  color: #e81259;
+}
+.no-touch .gn-icon-menu.gn-selected:hover i,
+.gn-icon-menu.gn-selected i {
+  color: #fff;
+}
+.no-touch .gn-icon-menu.gn-selected:hover,
+.gn-icon-menu.gn-selected  {
+  background: #e81259;
+  color: #fff;
+}
+
+/* 03. CAROUSELS (SLIDERS)
+****************************************************************************************************/
+.carousel-indicators li {
+  border: 1px solid #e81259;
+}
+.carousel-indicators .active {
+  background-color: #e81259;
+}
+.carousel-control:hover,
+.carousel-control:focus {
+  color: #e81259;
+}
+.carousel-caption a:hover {
+  color: #e81259;
+}
+.slider-landing-left-wrapper:hover .slider-landing-left:after {
+  border-bottom: 100px solid #e81259;
+}
+.slider-landing-right-wrapper:hover .slider-landing-right:after {
+  border-right: 400px solid #e81259;
+}
+/* Chevron for landing slider*/
+.btn-welcome:hover span {
+  background: #e81259;
+  border: 1px solid #e81259;
+}
+/* Video Landing */
+.video-landing-left:after {
+  border-bottom: 100px solid #e81259;
+}
+.video-landing-right:after {
+
+  border-right: 400px solid #e81259;
+}
+/* Video Controls */
+.video-controls a:hover {
+  background: #e81259;
+}
+/* Carousel-03 (Clients) */
+/* Outside controls */
+.outside-controls-for-slider a:hover,
+.outside-controls-for-slider a.hover {
+  background: #e81259;
+}
+
+/* 04 BUTTONS
+****************************************************************************************************/
+/* Button primary */
+.btn-primary {
+  background-color: #e81259;
+  border-color: #e81259;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  background-color: #e81259;
+  border-color: #e81259;
+}
+figcaption .btn-primary:hover,
+figcaption .btn-primary:focus,
+figcaption .btn-primary:active,
+figcaption .btn-primary.active {
+  color: #e81259;
+  background-color: #fff;
+  border-color: #fff;
+}
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #e81259;
+  border-color: #e81259;
+  opacity: 0.5;
+}
+.btn-primary .badge {
+  color: #e81259;
+  background-color: #fff;
+}
+
+/* 05 SVG (SVG ANIMATION)
+****************************************************************************************************/
+/* Common styles */
+/* Style for SVG */
+.svg-animation svg path {
+  fill: #e81259;
+}
+
+/* 06 SECTIONS + SVG
+****************************************************************************************************/
+/* Features */
+.hover-listener-for-icons:hover .fa-circle {
+  color: #e81259;
+}
+/* About Us + SVG */
+.about-social-icons li {
+  color: #e81259;
+}
+/* About Us. SVG */
+.about-social-icons a:hover .fa-inverse {
+  color: #e81259;
+}
+/* Portfolio. SVG */
+.portfolio-thumb-svg figcaption a:hover .fa-inverse {
+  color: #e81259;
+}
+/* Portfolio-invert */
+.portfolio-thumb-svg-invert svg path {
+  fill: #000;
+}
+.portfolio-thumb-svg-invert .open-image {
+  color: #e81259;
+}
+.portfolio-thumb-svg-invert figcaption a:hover .fa-inverse {
+  color: #e81259;
+}
+/* Pricing tables */
+.pricing-title {
+  color: #e81259;
+}
+.pricing-stuff li:before {
+  color: #e81259;
+}
+.pricing-stuff li:hover {
+  background: #e81259 !important;
+}
+/* Blog + SVG */
+.topic-date {
+  color: #fff;
+}
+/* Blog-invert */
+.blog-topic-svg-invert .topic-date {
+  border-color: #e81259;
+}
+.blog-topic-svg-invert svg path {
+  fill: #000;
+}
+/* blog-topic */
+.topic-title-date,
+.topic-title-comments {
+  color: #e81259;
+}
+/* Contacts */
+.nav-tabs-circle > li > a:hover {
+  background-color: #e81259;
+}
+.nav-tabs-circle > li.active > a,
+.nav-tabs-circle > li.active > a:hover,
+.nav-tabs-circle > li.active > a:focus {
+  background-color: #e81259;
+}
+.gmap-overlay-marker i {
+  color: #e81259 !important;
+}
+/* Feedback, Subscribe (Forms) */
+.form-control:focus {
+  border-color: #e81259;
+}
+.success-message {
+  background: #e81259;
+}
+.has-error {
+  color: #e81259;
+}
+/* Follow us */
+.follow-us li:hover {
+  background: #e81259;
+}
+/* Footer copyrights */
+.footer-navigation li a:hover {
+  color: #e81259;
+}
+
+/* 07 Additional elements
+****************************************************************************************************/
+/* Separators */
+.separator-theme-color {
+  background: #e81259;
+}
+
+/* Quotes */
+.quote-full {
+  width: auto;
+}
+
+.quote-text:before,
+.quote-text:after {
+  background: #e81259;
+}
+/* Tooltip */
+.tooltip-inner {
+  background-color: #e81259;
+}
+.tooltip.top .tooltip-arrow {
+  border-top-color: #e81259;
+}
+.tooltip.top-left .tooltip-arrow {
+  border-top-color: #e81259;
+}
+.tooltip.top-right .tooltip-arrow {
+  border-top-color: #e81259;
+}
+.tooltip.right .tooltip-arrow {
+  border-right-color: #e81259;
+}
+.tooltip.left .tooltip-arrow {
+  border-left-color: #e81259;
+}
+.tooltip.bottom .tooltip-arrow {
+  border-bottom-color: #e81259;
+}
+.tooltip.bottom-left .tooltip-arrow {
+  border-bottom-color: #e81259;
+}
+.tooltip.bottom-right .tooltip-arrow {
+  border-bottom-color: #e81259;
+}
+/* Detect mobile button */
+.global-mobile-on .detect-mobile {
+  background: #e81259;
+}
+/* Responsive */
+@media (max-width: 639px) {
+  .carousel-02 .carousel-caption {
+    background: #e81259;
+  }
+}
+@media (max-width: 479px) {
+  .reply:before {
+    background: #e81259;
+  }
+}
+/* Fancybox elements
+****************************************************************************************************/
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+  background-image: url('../../images/fancybox/controls-themes/ruby/fancybox_sprite.png');
+}
+.fancybox-title-float-wrap .child {
+  background: #e81259;
+}
+/*Retina graphics!*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+     only screen and (min--moz-device-pixel-ratio: 1.5),
+     only screen and (min-device-pixel-ratio: 1.5){
+
+  #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+    background-image: url('../../images/fancybox/controls-themes/ruby/fancybox_sprite@2x.png');
+    background-size: 44px 152px; /*The size of the normal image, half the size of the hi-res image*/
+  }
+}

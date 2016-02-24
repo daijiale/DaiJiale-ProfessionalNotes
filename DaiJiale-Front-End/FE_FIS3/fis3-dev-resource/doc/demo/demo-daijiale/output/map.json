@@ -1,0 +1,13 @@
+{
+    "res": {
+        "app.js": {
+            "uri": "/app.js",
+            "type": "js"
+        },
+        "style.css": {
+            "uri": "/style.css",
+            "type": "css"
+        }
+    },
+    "pkg": {}
+}

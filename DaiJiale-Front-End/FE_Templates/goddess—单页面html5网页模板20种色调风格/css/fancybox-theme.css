@@ -1,0 +1,49 @@
+/*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
+
+/* Fancybox custom styles for template "Goddess" */
+.fancybox-close,
+.fancybox-prev span,
+.fancybox-next span,
+.fancybox-title {
+	opacity: 0;
+	-webkit-transition: all 0.3s ease-out;
+	   -moz-transition: all 0.3s ease-out;
+	    -ms-transition: all 0.3s ease-out;
+	     -o-transition: all 0.3s ease-out;
+	        transition: all 0.3s ease-out;
+}
+.fancybox-prev span {
+	left: -18px;
+}
+.fancybox-next span {
+	right: -18px;
+}
+
+.fancybox-opened .fancybox-skin {
+	-webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+	        box-shadow: none;
+}
+
+.fancybox-title-float-wrap {
+	margin-bottom: -15px;
+}
+.fancybox-title-float-wrap .child {
+	background: #e84700;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;
+	        border-radius: 5px;
+	text-shadow: none;
+}
+.fancybox-close {
+	top: -18px;
+	right: 50%;
+	margin-right: -18px;
+	
+}
+.fancybox-wrap:hover .fancybox-close,
+.fancybox-wrap:hover .fancybox-prev span,
+.fancybox-wrap:hover .fancybox-next span,
+.fancybox-wrap:hover .fancybox-title {
+	opacity: 1;
+}
