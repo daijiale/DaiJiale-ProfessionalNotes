@@ -5,7 +5,7 @@ title:【Java】基于JDBC的学生会管理应用
 
 # 开发环境配置
 
-- [Mac下配置J2EE开发环境](http://www.jikexueyuan.com/course/465.html)
+- [Mac下配置J2EE开发环境]()
 - [chmod shell命令详解](http://blog.csdn.net/codingkid/article/details/6567831)
 
 ![](http://7xi6qz.com1.z0.glb.clouddn.com/djlblogapache.png)
@@ -22,13 +22,85 @@ title:【Java】基于JDBC的学生会管理应用
 
 # 数据库设计
 
-## 1．建立数据库`create database StudentsGroup`
-## 2．建立数据表
-### （1）系统管理员信息表的建立
-create table User（	Id  int(11)    	       not null unique,	Username  char(30)  	   not null,	Password   char(30)       not null,	primary key(Id),);### （2）学生会干部基本信息表的建立create table Cadres（	StuNo  int(11)    	          not null unique,	StuName  char(20)  	   not null,	StuSex      char(10)      	   null,	StuPosition    char(50)    not null,	StuMajor    char(50)        null,	StuDepartment  char(20)        not null,	StuGrade   char(10)  	    null,	StuPhoneNo	char(20)  	not null,	StuStaTime  	bigint(50)    not null, 	StuCase   varchar(50)      null,	primary key(StuNo),	foreign key(StuDepart) references 	Department(DepNo),	check(StuSex = ‘男’ or StuSex = ‘女’));
-### （3）财务基本信息表的建立：create table Finance (	FinNo  int(11)		     not null unique,	FinPurpose  char(50)       null,	FinMoney  char(10) 		  not null,	FinPerson  char(20)	   not null,	FinDepartment  char(20)    not null	FinTime  datetime	         null	FinRemain  char(10)         null	primary key(FinNo),	foreign key (FinPerson) references Student(StuNo),	foreign key (FinDepartment) references Department(DepNo));### （4）事务活动基本信息表的建立：create table Affairs (	AffNo   int(6)		      not null unique,	PlaNo   char(6)		      not null,	AffName   char(20)      not null,       AffScope  char(8)        null,       AffDepartment  char(6)   not null,       AffScheme  char(50)     null,       AffQuality  char(4)       not null,	primary key(AffNo),	foreign key(AffDepartment) references Department(DepNo));
-### （5）部门基本信息表的建立：create table Department (	DepNo  int(11)			   not null unique,	DepName  char(50)	       not null,	DepMinName  char(10)		not null,	DepSminSum  int(10)		    null,	MinPhoNo  char(20)  		null,
-	DepMemSum  int(20)		null,	primary key(DepNo),	foreign key(DepMinName) references Student(StuNo));### （6）学生会干部参与活动基本信息表的建立：create table JoinAffairs (	AffNo  int(6)		 not null,	StuNo  char(8)		 not null,	Present  char(8)		 null,	primary key(AffNo, StuNo),        foreign key(AffNo) references Affairs(AffNo),	foreign key(StuNo) references Student(StuNo));
+## 1．建立数据库
+
+`create database StudentsGroup`
+
+
+## 2．建立数据表
+
+### （1）系统管理员信息表的建立
+create table User（
+	Id  int(11)    	       not null unique,
+	Username  char(30)  	   not null,
+	Password   char(30)       not null,
+	primary key(Id),
+);
+
+### （2）学生会干部基本信息表的建立
+create table Cadres（
+	StuNo  int(11)    	          not null unique,
+	StuName  char(20)  	   not null,
+	StuSex      char(10)      	   null,
+	StuPosition    char(50)    not null,
+	StuMajor    char(50)        null,
+	StuDepartment  char(20)        not null,
+	StuGrade   char(10)  	    null,
+	StuPhoneNo	char(20)  	not null,
+	StuStaTime  	bigint(50)    not null, 
+	StuCase   varchar(50)      null,
+	primary key(StuNo),
+	foreign key(StuDepart) references 	Department(DepNo),
+	check(StuSex = ‘男’ or StuSex = ‘女’));
+
+
+
+### （3）财务基本信息表的建立：
+create table Finance (
+	FinNo  int(11)		     not null unique,
+	FinPurpose  char(50)       null,
+	FinMoney  char(10) 		  not null,
+	FinPerson  char(20)	   not null,
+	FinDepartment  char(20)    not null
+	FinTime  datetime	         null
+	FinRemain  char(10)         null
+	primary key(FinNo),
+	foreign key (FinPerson) references Student(StuNo),
+	foreign key (FinDepartment) references Department(DepNo));
+
+### （4）事务活动基本信息表的建立：
+create table Affairs (
+	AffNo   int(6)		      not null unique,
+	PlaNo   char(6)		      not null,
+	AffName   char(20)      not null,
+       AffScope  char(8)        null,
+       AffDepartment  char(6)   not null,
+       AffScheme  char(50)     null,
+       AffQuality  char(4)       not null,
+	primary key(AffNo),
+	foreign key(AffDepartment) references Department(DepNo));
+
+
+### （5）部门基本信息表的建立：
+create table Department (
+	DepNo  int(11)			   not null unique,
+	DepName  char(50)	       not null,
+	DepMinName  char(10)		not null,
+	DepSminSum  int(10)		    null,
+	MinPhoNo  char(20)  		null,
+	DepMemSum  int(20)		null,
+	primary key(DepNo),
+	foreign key(DepMinName) references Student(StuNo));
+
+### （6）学生会干部参与活动基本信息表的建立：
+create table JoinAffairs (
+	AffNo  int(6)		 not null,
+	StuNo  char(8)		 not null,
+	Present  char(8)		 null,
+	primary key(AffNo, StuNo), 
+       foreign key(AffNo) references Affairs(AffNo),
+	foreign key(StuNo) references Student(StuNo));
+
 # 技术点分析
 
 
