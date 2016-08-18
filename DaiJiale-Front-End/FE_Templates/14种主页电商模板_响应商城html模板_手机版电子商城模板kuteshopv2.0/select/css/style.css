@@ -1,0 +1,276 @@
+body {
+    background: #faf9f6;
+    color: #95938d;
+	font: 14px/18px "Open Sans",Arial,Helvetica,sans-serif; 
+	text-align: center;
+}
+
+a {
+	color: #72716e;
+	text-decoration: none;
+}
+
+a:hover {
+    color: #72716e;
+}
+
+button {
+	padding:10px 20px;
+	border:0;
+	color:#fff;
+	border-radius:3px;
+	background-color: #ccc;
+}
+button.active{
+	background-color:#08c;
+}
+
+header {
+	background: #fff url(../images/header_bg.jpg) top center no-repeat;
+    background-size: cover;
+	border-top: 3px solid #e61446;
+    border-bottom: 1px solid #dbd7d6;
+    text-align: center;
+    padding: 120px 0;
+}
+
+.logo {
+    margin-top: 38px;
+	margin-bottom: 45px;
+}
+
+.header-title {
+    
+}
+
+.header-title h2 {
+	font-size: 46px;
+	font-weight: 700;
+	line-height: 1;
+    font-family: "Tinos";
+    margin: 0 0 28px;
+}
+
+.header-title h2 a {
+    color: #726c61;
+	text-decoration: none;
+}
+
+.header-title h2 a:hover {
+	color: #726c61;
+}
+
+.header-title p {
+    font-family:"Source Code Pro";
+    font-size: 25px;
+    line-height: 1.4;
+    font-weight: 300;
+    color: #62615f;
+    margin: 0 0 35px;
+}
+
+.btn {
+	color: #686660;
+    font-size: 16px;
+	font-weight: 400;
+	padding: 10px 25px;
+	margin: 0 10px;
+	text-transform: uppercase;
+    font-family: "Open Sans";
+    border: 1px solid #95938c;
+    border-radius: 0;
+-webkit-transition: all 0.2s linear 0s; /* Safari and Chrome */
+       -moz-transition: all 0.2s linear 0s; /* Firefox 4 */
+         -o-transition: all 0.2s linear 0s; /* Opera */
+            transition: all 0.2s linear 0s;
+      min-width: 150px;
+}
+.btn:hover{
+    color: #fff;
+    background:#e61446;
+    border-color: #e61446;
+}
+.btn.btn-alt {
+    background-color: #e61446;
+    border-color: #e61446;
+    color: #fff;
+-webkit-transition: all 0.2s linear 0s; /* Safari and Chrome */
+       -moz-transition: all 0.2s linear 0s; /* Firefox 4 */
+         -o-transition: all 0.2s linear 0s; /* Opera */
+            transition: all 0.2s linear 0s;
+}
+.btn.btn-alt:hover{
+    background-color:#1694d6;
+    border-color:#1694d6;
+}
+
+section {
+    padding: 60px 35px 120px;
+	overflow: hidden;
+}
+
+section > .row {
+	max-width: 1280px;
+	margin: auto;
+}
+
+.description {
+	color: #777;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 30px;
+}
+
+
+section .demo {
+	text-align: center;
+}
+section .demo p {
+	font-size: 14px;
+	line-height:1.4;
+}
+section .demo .demo-title {
+
+}
+
+section .demo .demo-image-wrap {
+	background: url(../images/monitor.png) center no-repeat;
+	position: relative;
+    background-size: contain;
+}
+
+section .demo .demo-image {
+	position: absolute;
+    left:5.42%;
+    top:6%;
+    width: 89.4%;
+    height: 58.9%;
+    border: 1px solid #aaa;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	margin: 0 auto;
+	-webkit-transition: all 0.5s linear 0s; /* Safari and Chrome */
+       -moz-transition: all 0.5s linear 0s; /* Firefox 4 */
+         -o-transition: all 0.5s linear 0s; /* Opera */
+            transition: all 0.5s linear 0s;
+}
+section .demo-fixed .demo-image {
+	background-size: 100% 100%;
+}
+
+section .demo1 .demo-image { background-image: url(../images/demo_01.jpg); }
+section .demo2 .demo-image { background-image: url(../images/demo_02.jpg); }
+section .demo3 .demo-image { background-image: url(../images/demo_03.jpg); }
+section .demo4 .demo-image { background-image: url(../images/demo_04.jpg); }
+section .demo5 .demo-image { background-image: url(../images/demo_05.jpg); }
+section .demo6 .demo-image { background-image: url(../images/demo_06.jpg); }
+section .demo7 .demo-image { background-image: url(../images/demo_07.jpg); }
+section .demo8 .demo-image { background-image: url(../images/demo_08.jpg); }
+section .demo9 .demo-image { background-image: url(../images/demo_09.jpg); }
+section .demo10 .demo-image { background-image: url(../images/demo_10.jpg);}
+section .demo11 .demo-image { background-image: url(../images/demo_11.jpg);}
+section .demo12 .demo-image { background-image: url(../images/demo_12.jpg);}
+section .demo13 .demo-image { background-image: url(../images/demo_13.jpg);}
+section .demo14 .demo-image { background-image: url(../images/demo_14.jpg);}
+section .demo15 .demo-image { background-image: url(../images/demo_15.jpg);}
+section .demo16 .demo-image { background-image: url(../images/demo_16.jpg);}
+section .demo17 .demo-image { background-image: url(../images/demo_17.jpg);}
+section .demo18 .demo-image { background-image: url(../images/demo_18.jpg);}
+
+section .demo-link:hover .demo-image {
+	background-position: center bottom;
+	-webkit-transition: all 5s linear 0s; /* Safari and Chrome */
+       -moz-transition: all 5s linear 0s; /* Firefox 4 */
+         -o-transition: all 5s linear 0s; /* Opera */
+            transition: all 5s linear 0s;
+}
+
+section .demo.coming .demo-image { background-image: url(../images/coming_soon.png); background-position: center center; background-size: auto auto; background-color: #ddd; }
+
+section .demo .demo-link {
+    display: block;
+    position: relative;
+	margin: 35px 5px 0;
+    text-decoration: none;
+}
+
+section .demo .demo-link2 {
+    display: block;
+    position: relative;
+	margin: 5px 5px 0;
+    text-decoration: none;
+}
+
+section .demo h3 {
+    font-size: 21px;
+    font-family: "Judson";
+	margin: 15px 0 5px;
+}
+
+section .tip {
+	position: absolute;
+    left: 20px;
+    top: -9px;
+    background: transparent url(../images/tip_bg.png) left top no-repeat;
+	padding: 0 10px 0 18px;
+	font-family: "Shadows Into Light",cursive;
+	font-size: 14px;
+	line-height: 27px;
+	color: #fff;
+}
+
+section .tip.new {
+	background: #6dbcdb;
+}
+
+.header-layouts img {
+    max-width: 100%;
+}
+
+footer {
+	background: #f3f3f3;
+    border-top: 1px solid #dbd7d6;
+	padding: 100px 15px;
+}
+
+footer h2 {
+    font-family: "Judson";
+    font-size: 50px;
+    font-weight: 700;
+    color: #84817a;
+    margin: 0 0 30px;
+}
+
+footer h3 {
+    font-family: "Source Code Pro";
+    font-size: 30px;
+    color: #62615f;
+    font-weight: 300;
+    line-height: 1.4;
+    margin: 0 0 30px;
+}
+footer a {
+	color: #777;
+}
+
+footer a:hover {
+	color: #08c;
+}
+
+@media (max-width: 767px) {
+    .footer-image {margin: 0 0 30px !important;}
+}
+
+@media (max-width: 480px) {
+    section .demo {
+		float: none;
+		width: 100%;
+	}
+}
+
+@media (max-width: 320px) {
+	section {
+		padding: 40px 20px 70px;
+	}
+}
